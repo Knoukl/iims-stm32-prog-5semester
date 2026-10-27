@@ -1,0 +1,58 @@
+PS C:\Visual Studio\Code\sdfdsfd\STM_prog\STM32> py .\build.py flash
+[CC] main.c
+[CC] stm32f1xx_it.c
+[CC] system_stm32f1xx.c
+[CC] syscalls.c
+[CC] sysmem.c
+[CC] stm32f1xx_hal.c
+[CC] stm32f1xx_hal_rcc.c
+[CC] stm32f1xx_hal_rcc_ex.c
+[CC] stm32f1xx_hal_gpio.c
+[CC] stm32f1xx_hal_dma.c
+[CC] stm32f1xx_hal_cortex.c
+[CC] stm32f1xx_hal_pwr.c
+[CC] stm32f1xx_hal_flash.c
+[CC] stm32f1xx_hal_flash_ex.c
+[CC] stm32f1xx_hal_exti.c
+[CC] stm32f1xx_hal_uart.c
+[AS] startup_stm32f107vctx.s
+[LD] firmware.elf
+[CP] firmware.bin
+[CP] firmware.hex
+
+--- Memory Size ---
+   text    data     bss     dec     hex filename
+   6536      20    1644    8200    2008 C:\Visual Studio\Code\sdfdsfd\STM_prog\STM32\build\firmware.elf
+-------------------
+Build successful!
+
+[FLASH] Programming target via OpenOCD (C:\Users\gjurt\AppData\Local\Microsoft\WinGet\Packages\xpack-dev-tools.openocd-xpack_Microsoft.Winget.Source_8wekyb3d8bbwe\xpack-openocd-0.12.0-7\bin\openocd.EXE)...
+xPack Open On-Chip Debugger 0.12.0+dev-02228-ge5888bda3-dirty (2025-10-04-22:44)
+Licensed under GNU GPL v2
+For bug reports, read
+        http://openocd.org/doc/doxygen/bugs.html
+none separate
+Info : STLINK V2J46S0 (API v2) VID:PID 0483:3748
+Info : Target voltage: 3.253510
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : clock speed 950 kHz
+Info : SWD DPIDR 0x1ba01477
+Info : [stm32f1x.cpu] Cortex-M3 r1p1 processor detected
+Info : [stm32f1x.cpu] target has 6 breakpoints, 4 watchpoints
+Info : [stm32f1x.cpu] Examination succeed
+Info : [stm32f1x.cpu] starting gdb server on 3333
+Info : Listening on port 3333 for gdb connections
+[stm32f1x.cpu] halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08001884 msp: 0x20010000
+** Programming Started **
+Info : device id = 0x10016418
+Info : flash size = 256 KiB
+Warn : Adding extra erase range, 0x0800199c .. 0x08001fff
+** Programming Finished **
+** Verify Started **
+** Verified OK **
+** Resetting Target **
+shutdown command invoked
+
+Flashing successful! Microcontroller is running.
